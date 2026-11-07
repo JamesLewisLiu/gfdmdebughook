@@ -1,0 +1,15 @@
+EXPORTS
+DebugHookInitialize
+DebugHookShutdown
+DebugHookGetStatus
+DebugHookSetSwitch
+DebugHookShowOverlay
+DebugHookGetFrames
+DebugHookGetSwitchCount
+DebugHookGetSwitchName
+DebugHookGetSwitchValue
+DebugHookGetSwitchReads
+DebugHookRestoreSwitch
+DebugHookRestoreNative
+DebugHookAllOff
+DebugHookGetHotkey
