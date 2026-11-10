@@ -43,6 +43,7 @@ jobs:
           name: gfdmdebughook-windows-x86
           path: |
             dist/GFDM-DebugHook-x86-development.zip
+            dist/GFDM-DebugHook-source-*.zip
             dist/SHA256SUMS.txt
           if-no-files-found: error
 

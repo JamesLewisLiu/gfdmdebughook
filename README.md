@@ -207,11 +207,23 @@ every version; query names/count instead of assuming the layout.
 Exit the process and remove the DLL loading argument from the next launch.
 No game or Spice binary needs restoring. Plugin INI/log may be retained.
 
-The repository's GPL-3.0 license is retained in `LICENSE`. The original
-prototype's MIT notice is retained in `licenses/DebugHook-original-MIT.txt`.
+Project-authored code and documentation in this version are distributed under
+**GPL-3.0-only**, with the full terms in `LICENSE`. Third-party components retain
+their own licenses. The historical prototype's MIT notice is preserved in
+`licenses/DebugHook-original-MIT.txt`; it does not offer the entire current
+version under MIT or revoke MIT permissions already granted for that prototype.
+See [LICENSES.md](LICENSES.md) for the component scope, embedded fonts and notices.
+
 Dear ImGui 1.92.9 WIP and MinHook keep their separate notices under `vendor/`.
 They were copied from the existing Spice checkout at commit
 `b7d33db9b7a8f2b523cf8667ac03b8882045ec34`; no Spice implementation or SDK is
 linked. `DEPENDENCIES.json` records exact vendor file hashes. The donor ImGui
 configuration disables default allocators; this DLL explicitly supplies its own
 malloc/free callbacks before creating an ImGui context.
+
+Each packaged build includes `SOURCES.txt` with its source commit and fixed
+source download links. The same build artifact also contains the corresponding
+`GFDM-DebugHook-source-<commit>.zip`, including vendored dependencies and build
+scripts. Keep that source archive, the notices and `SHA256SUMS.txt` available
+alongside the binary when redistributing it. Source is available at no extra
+charge; downloading the binary does not require downloading the source.
